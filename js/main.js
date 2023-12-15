@@ -101,12 +101,23 @@ console.log(result1);
 
 async function getData() {
 // const getData = async () => {   --- for arrow function
-    const rest = await fetch('https://jsonplaceholder.typicode.com/users') ;
+    const rest = await fetch('https://randomuser.me/api/') ;
     const json = await rest.json() ;
-    console.log(json);
+    console.log(json.results[0].gender);
 }
 
 getData();
+
+//.........................................
+
+//export and import :
+
+
+
+
+
+
+
 
 
 
