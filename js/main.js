@@ -32,6 +32,8 @@ arry.forEach((number, index) => {
 
 console.log(arry) ;
 
+//......................................
+
 //Destructuring :
 
 const data = {
@@ -43,9 +45,37 @@ const data = {
     }
 };
 
-const age = data["age"] ;
-const street = data.address.street ;
+// const age = data["age"] ;
+// const street = data.address.street ;
 
-console.log(age);
-console.log(data.address.city);
-console.log(street);
+// console.log(age);
+// console.log(data.address.city);
+// console.log(street);
+
+//des :> 
+
+const { 
+    name, 
+    address: {city,street}, 
+    age 
+} = data ;
+
+console.log(city);
+
+
+//.....................................
+
+//Spread Operator :
+
+const numbers1 = [1,3,5,7,9] ;
+const numbers2 = [2,4,6,8,10] ;
+
+const nums = [...numbers1, ...numbers2] ;
+
+const nums2 = ["start", 0 , ...numbers1, 10 , "End"];
+
+console.log(nums) ;
+console.log(nums2);
+
+
+
