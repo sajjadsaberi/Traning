@@ -31,3 +31,21 @@ arry.forEach((number, index) => {
 }) ;
 
 console.log(arry) ;
+
+//Destructuring :
+
+const data = {
+    name: "ali",
+    age: "28",
+    address: {
+        city: "bam",
+        street: "bahonar"
+    }
+};
+
+const age = data["age"] ;
+const street = data.address.street ;
+
+console.log(age);
+console.log(data.address.city);
+console.log(street);
