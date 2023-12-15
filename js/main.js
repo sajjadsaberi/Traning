@@ -91,6 +91,14 @@ console.log(result1);
 
 //Promise : async JS : 
 
+fetch('https://jsonplaceholder.typicode.com/users')
+    .then(response => response.json())
+    .then(json => console.log(json));
+
+//........................................
+
+// Async Await :
+
 
 
 
