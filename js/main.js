@@ -91,13 +91,22 @@ console.log(result1);
 
 //Promise : async JS : 
 
-fetch('https://jsonplaceholder.typicode.com/users')
-    .then(response => response.json())
-    .then(json => console.log(json));
+// fetch('https://jsonplaceholder.typicode.com/users')
+//     .then(response => response.json())
+//     .then(json => console.log(json));
 
 //........................................
 
 // Async Await :
+
+async function getData() {
+// const getData = async () => {   --- for arrow function
+    const rest = await fetch('https://jsonplaceholder.typicode.com/users') ;
+    const json = await rest.json() ;
+    console.log(json);
+}
+
+getData();
 
 
 
