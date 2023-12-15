@@ -77,5 +77,26 @@ const nums2 = ["start", 0 , ...numbers1, 10 , "End"];
 console.log(nums) ;
 console.log(nums2);
 
+//.......................................
+
+//Ternary Operator :
+
+const Num3 = 10 ;
+
+const result1 = Num3 >= 10 ? "Num is greater than 10" : "Num is less than 10" ;
+
+console.log(result1); 
+
+//.......................................
+
+//Promise : async JS : 
+
+
+
+
+
+
+
+
 
 
