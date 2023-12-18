@@ -4,21 +4,26 @@ import React from "react";
 // if-else
 
 function Navbar() {
-    const isLogin = true ;
 
-    if(!isLogin) {
-        return (
-            <navbar>
-                <button>Settings</button>
-            </navbar>
-        )
-    } else {
-        return (
-            <navbar>
-                <button>Login</button>
-            </navbar>
-        )
-    };
+    // Conditional Rendering
+    // const isLogin = true ;
+
+    // if(!isLogin) {
+    //     return (
+    //         <navbar>
+    //             <button>Settings</button>
+    //         </navbar>
+    //     )
+    // } else {
+    //     return (
+    //         <navbar>
+    //             <button>Login</button>
+    //         </navbar>
+    //     )
+    // };
+//...............................................
+
+// Conditional Rendering - Ternary operator
 };
 
 export default Navbar ;
